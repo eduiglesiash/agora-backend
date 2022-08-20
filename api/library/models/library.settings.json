@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "libraries",
+  "info": {
+    "name": "library",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "isbn": {
+      "type": "biginteger"
+    },
+    "description": {
+      "type": "text"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "imgURL": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "borrowed_books",
+  "info": {
+    "name": "borrowedBooks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_library": {
+      "model": "users-library"
+    },
+    "library": {
+      "model": "library"
+    }
+  }
+}

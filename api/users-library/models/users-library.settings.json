@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users_libraries",
+  "info": {
+    "name": "UsersLibraries",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "avatar": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "codeUser": {
+      "type": "string",
+      "required": true
+    },
+    "totalBookRead": {
+      "type": "integer"
+    }
+  }
+}

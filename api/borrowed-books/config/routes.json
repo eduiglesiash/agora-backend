@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/borrowed-books",
+      "handler": "borrowed-books.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/borrowed-books/users/:isbn",
+      "handler": "borrowed-books.users",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/borrowed-books/count",
+      "handler": "borrowed-books.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/borrowed-books/:id",
+      "handler": "borrowed-books.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/borrowed-books",
+      "handler": "borrowed-books.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/borrowed-books/:id",
+      "handler": "borrowed-books.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/borrowed-books/:id",
+      "handler": "borrowed-books.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

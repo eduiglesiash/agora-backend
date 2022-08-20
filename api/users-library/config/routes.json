@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/users-libraries",
+      "handler": "users-library.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/users-libraries/count",
+      "handler": "users-library.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/users-libraries/:id",
+      "handler": "users-library.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/users-libraries",
+      "handler": "users-library.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/users-libraries/:id",
+      "handler": "users-library.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/users-libraries/:id",
+      "handler": "users-library.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
