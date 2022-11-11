@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
   settings: {
     cors: {
       enabled: true,
-      origin: ['*']
+      origin: ['https://agora.matadealcantara.com']
     },
   },
 });
